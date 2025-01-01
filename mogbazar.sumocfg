@@ -1,0 +1,15 @@
+<configuration>
+    <input>
+    <net-file value="mogbazar.net.xml"/>
+    <route-files value="routes.rou.xml"/>
+    <additional-files value="detectors.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+    <output>
+        <summary value="summary.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+</configuration>

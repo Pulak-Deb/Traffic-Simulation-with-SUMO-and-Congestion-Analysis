@@ -1,0 +1,10 @@
+<additional>
+    <!-- Traffic Flow Detector (E1) -->
+    <e1Detector id="flow_detector_lane1" lane="sn1_0" pos="50" freq="1" file="flow_lane_sn1.xml"/>
+
+    <!-- Congestion Detector (E2) -->
+    <e2Detector id="congestion_detector_lane1" lane="sn1_0" pos="0" freq="1" file="congestion_lane_sn1.xml"/>
+	
+</additional>
+
+

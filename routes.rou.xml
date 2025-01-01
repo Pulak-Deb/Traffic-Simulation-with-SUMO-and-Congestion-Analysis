@@ -1,0 +1,11 @@
+<routes>
+    <!-- Vehicle Types -->
+    <vType id="passenger_car" vClass="passenger" accel="2.6" decel="4.5" length="4.5" maxSpeed="20"/>
+    <vType id="bus" vClass="bus" accel="1.2" decel="2.5" length="12.0" maxSpeed="15"/>
+    <vType id="motorbike" vClass="motorcycle" accel="2.8" decel="3.5" length="2.5" maxSpeed="25"/>
+    <vType id="cng" vClass="passenger" accel="2.4" decel="3.8" length="3.0" maxSpeed="18"/>
+    <vType id="nmv" vClass="rickshaw" accel="1.0" decel="1.5" length="2.0" maxSpeed="5"/>
+</routes>
+
+
+
