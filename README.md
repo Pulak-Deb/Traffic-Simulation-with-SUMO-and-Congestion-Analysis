@@ -26,7 +26,7 @@ The simulation generates dynamic traffic flow and congestion data based on the r
 
 ### Prerequisites:
 1. **SUMO**: Make sure SUMO (Simulation of Urban MObility) is installed. Follow the instructions on [SUMO's official website](https://www.eclipse.org/sumo/) to install SUMO.
-2. **Python**: Python 3.x should be installed.
+2. **Python**: Python should be installed.
 3. **Required Python Libraries**:
    - `traci`: Interface for Python to control the SUMO simulation.
    - `matplotlib`: For data visualization.
@@ -40,24 +40,24 @@ The simulation generates dynamic traffic flow and congestion data based on the r
 - [congestion_data.csv](congestion_data.csv): Output File containing congestion (occupancy) data over time.
 
 ## Usage
-1.**Start the Traffic Simulation**: Run the simulate_traffic.py script to start the traffic simulation. The simulation will generate traffic flow and congestion data and store it in flow_data.csv and congestion_data.csv
-2.**Data Files**: The traffic simulation generates two CSV files: flow_data.csv: Contains traffic flow data (vehicles per step) and congestion_data.csv: Contains lane congestion data (occupancy).
-3.**Visualization**: After running the simulation and generating the CSV files, you can visualize the congestion levels by plotting the data using the script in the provided [notebook](from_SUMO.ipynb)
+- **Start the Traffic Simulation**: Run the simulate_traffic.py script to start the traffic simulation. The simulation will generate traffic flow and congestion data and store it in flow_data.csv and congestion_data.csv
+- **Data Files**: The traffic simulation generates two CSV files: flow_data.csv: Contains traffic flow data (vehicles per step) and congestion_data.csv: Contains lane congestion data (occupancy).
+- **Visualization**: After running the simulation and generating the CSV files, you can visualize the congestion levels by plotting the data using the script in the provided [notebook](from_SUMO.ipynb)
 
 ## Data Analysis
-     Simulation: ![traffic-simulation-output](traffic-simulation-output.mp4)
-     classifying Congestion Levels: Congestion levels are classified into three categories:
+- Simulation: ![traffic-simulation-output](traffic_simulation_output.mp4)
+- classifying Congestion Levels: Congestion levels are classified into three categories:
                                                                  -Low: Occupancy below 30%.
                                                                  -Moderate: Occupancy between 30% and 70%.
                                                                  -High: Occupancy above 70%.
-This classification helps in understanding the traffic flow and congestion during different periods of the day.
-    Congestion Over Time prediction with LSTM: ![congestion_prediction](congestion_prediction.png)
-    Congestion by Time of Day: ![Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
+- This classification helps in understanding the traffic flow and congestion during different periods of the day.
+- Congestion Over Time prediction with LSTM: ![congestion_prediction](congestion_prediction.png)
+- Congestion by Time of Day: ![Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
 
 ## Dependencies
- -SUMO (Simulation of Urban MObility): Used for traffic simulation.
- -traci: Python interface to control the SUMO simulation.
- -matplotlib: For visualizing data (plots).
- -pandas: For data manipulation and analysis
- -Tensorflow: For importing LSTM
+- SUMO (Simulation of Urban MObility): Used for traffic simulation.
+- traci: Python interface to control the SUMO simulation.
+- matplotlib: For visualizing data (plots).
+- pandas: For data manipulation and analysis
+- Tensorflow: For importing LSTM
  
