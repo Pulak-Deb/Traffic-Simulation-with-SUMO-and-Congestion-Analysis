@@ -8,10 +8,9 @@ This project simulates traffic flow and congestion levels using **SUMO** (Simula
 - [Usage](#usage)
 - [Data Analysis](#data-analysis)
   - [Classifying Congestion Levels](#classifying-congestion-levels)
-  - [Congestion Over Time prediction with LSTM](#Congestion Over Time prediction with LSTM)
+  - [Congestion Over Time prediction with LSTM](#Congestion-Over-Time-prediction-with-LSTM)
   - [Congestion by Time of Day](#congestion-by-time-of-day)
 - [Dependencies](#dependencies)
-- [License](#license)
 
 ## Overview
 The simulation generates dynamic traffic flow and congestion data based on the real-time traffic simulation conditions. The analysis focuses on identifying peak congestion periods by classifying congestion levels (Low, Moderate, High) based on lane occupancy. The project also uses this data to predict high congestion periods, allowing for improved traffic management strategies.
@@ -32,6 +31,7 @@ The simulation generates dynamic traffic flow and congestion data based on the r
    - `traci`: Interface for Python to control the SUMO simulation.
    - `matplotlib`: For data visualization.
    - `pandas`: For data manipulation and analysis.
+   - `Tensorflow`: For importing LSTM
 ### Files:
 [mogbazar.net.xml](mogbazar.net.xml) : Main net.xml file with the road network which was previously downloaded as map.osm from [Open Street Map](https://www.openstreetmap.org/search?query=dhaka%20satrasta#map=17/23.759645/90.401087) to get a real road condition in Dhaka city.
 [simulate_traffic.py](simulate_traffic.py): Main Python script to run the simulation and collect traffic data.
@@ -50,8 +50,8 @@ The simulation generates dynamic traffic flow and congestion data based on the r
                                                                  -Moderate: Occupancy between 30% and 70%.
                                                                  -High: Occupancy above 70%.
 This classification helps in understanding the traffic flow and congestion during different periods of the day.
-**Congestion Over Time prediction with LSTM**: [congestion_prediction](congestion_prediction.png)
-**Congestion by Time of Day**: [Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
+**Congestion Over Time prediction with LSTM**: ![congestion_prediction](congestion_prediction.png)
+**Congestion by Time of Day**: ![Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
 
 ## Dependencies
  -SUMO (Simulation of Urban MObility): Used for traffic simulation.
