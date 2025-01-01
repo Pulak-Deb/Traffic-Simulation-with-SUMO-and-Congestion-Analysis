@@ -33,11 +33,11 @@ The simulation generates dynamic traffic flow and congestion data based on the r
    - `pandas`: For data manipulation and analysis.
    - `Tensorflow`: For importing LSTM
 ### Files:
- -[mogbazar.net.xml](mogbazar.net.xml) : Main net.xml file with the road network which was previously downloaded as map.osm from [Open Street Map](https://www.openstreetmap.org/search?query=dhaka%20satrasta#map=17/23.759645/90.401087) to get a real road condition in Dhaka city. ![mogbazar](mogbazar.png)
- -[simulate_traffic.py](simulate_traffic.py): Main Python script to run the simulation and collect traffic data.
- -[mogbazar.sumocfg](mogbazar.sumocfg): The SUMO configuration file for the traffic simulation (included in the project).
- -[flow_data.csv](flow_data.csv): Output File containing traffic flow data over time (vehicles per step).
- -[congestion_data.csv](congestion_data.csv): Output File containing congestion (occupancy) data over time.
+- [mogbazar.net.xml](mogbazar.net.xml) : Main net.xml file with the road network which was previously downloaded as map.osm from [Open Street Map](https://www.openstreetmap.org/search?query=dhaka%20satrasta#map=17/23.759645/90.401087) to get a real road condition in Dhaka city. ![mogbazar](mogbazar.png)
+- [simulate_traffic.py](simulate_traffic.py): Main Python script to run the simulation and collect traffic data.
+- [mogbazar.sumocfg](mogbazar.sumocfg): The SUMO configuration file for the traffic simulation (included in the project).
+- [flow_data.csv](flow_data.csv): Output File containing traffic flow data over time (vehicles per step).
+- [congestion_data.csv](congestion_data.csv): Output File containing congestion (occupancy) data over time.
 
 ## Usage
 1.**Start the Traffic Simulation**: Run the simulate_traffic.py script to start the traffic simulation. The simulation will generate traffic flow and congestion data and store it in flow_data.csv and congestion_data.csv
