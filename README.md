@@ -8,7 +8,7 @@ This project simulates traffic flow and congestion levels using **SUMO** (Simula
 - [Usage](#usage)
 - [Data Analysis](#data-analysis)
   - [Classifying Congestion Levels](#classifying-congestion-levels)
-  - [Congestion Over Time](#congestion-over-time)
+  - [Congestion Over Time prediction with LSTM](#Congestion Over Time prediction with LSTM)
   - [Congestion by Time of Day](#congestion-by-time-of-day)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -32,8 +32,31 @@ The simulation generates dynamic traffic flow and congestion data based on the r
    - `traci`: Interface for Python to control the SUMO simulation.
    - `matplotlib`: For data visualization.
    - `pandas`: For data manipulation and analysis.
+### Files:
+[mogbazar.net.xml](mogbazar.net.xml) : Main net.xml file with the road network which was previously downloaded as map.osm from [Open Street Map](https://www.openstreetmap.org/search?query=dhaka%20satrasta#map=17/23.759645/90.401087) to get a real road condition in Dhaka city.
+[simulate_traffic.py](simulate_traffic.py): Main Python script to run the simulation and collect traffic data.
+[mogbazar.sumocfg](mogbazar.sumocfg): The SUMO configuration file for the traffic simulation (included in the project).
+[flow_data.csv](flow_data.csv): Output File containing traffic flow data over time (vehicles per step).
+[congestion_data.csv](congestion_data.csv): Output File containing congestion (occupancy) data over time.
 
-You can install the required libraries using pip:
+## Usage
+1.**Start the Traffic Simulation**: Run the simulate_traffic.py script to start the traffic simulation. The simulation will generate traffic flow and congestion data and store it in flow_data.csv and congestion_data.csv
+2.**Data Files**: The traffic simulation generates two CSV files: flow_data.csv: Contains traffic flow data (vehicles per step) and congestion_data.csv: Contains lane congestion data (occupancy).
+3.**Visualization**: After running the simulation and generating the CSV files, you can visualize the congestion levels by plotting the data using the script in the provided [notebook](from_SUMO.ipynb)
 
-```bash
-pip install traci matplotlib pandas
+## Data Analysis
+**classifying Congestion Levels**: Congestion levels are classified into three categories:
+                                                                 -Low: Occupancy below 30%.
+                                                                 -Moderate: Occupancy between 30% and 70%.
+                                                                 -High: Occupancy above 70%.
+This classification helps in understanding the traffic flow and congestion during different periods of the day.
+**Congestion Over Time prediction with LSTM**: [congestion_prediction](congestion_prediction.png)
+**Congestion by Time of Day**: [Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
+
+## Dependencies
+ -SUMO (Simulation of Urban MObility): Used for traffic simulation.
+ -traci: Python interface to control the SUMO simulation.
+ -matplotlib: For visualizing data (plots).
+ -pandas: For data manipulation and analysis
+ -Tensorflow: For importing LSTM
+ 
