@@ -11,6 +11,7 @@ This project simulates traffic flow and congestion levels using **SUMO** (Simula
   - [Congestion Over Time prediction with LSTM](#Congestion-Over-Time-prediction-with-LSTM)
   - [Congestion by Time of Day](#congestion-by-time-of-day)
 - [Dependencies](#dependencies)
+- [Simulation Video](https://imgur.com/a/QMGdjfY)
 
 ## Overview
 The simulation generates dynamic traffic flow and congestion data based on the real-time traffic simulation conditions. The analysis focuses on identifying peak congestion periods by classifying congestion levels (Low, Moderate, High) based on lane occupancy. The project also uses this data to predict high congestion periods, allowing for improved traffic management strategies.
