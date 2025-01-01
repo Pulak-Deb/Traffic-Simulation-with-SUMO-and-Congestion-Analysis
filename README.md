@@ -1,6 +1,6 @@
 # Traffic Simulation and Congestion Analysis
 
-This project simulates traffic flow and congestion levels using **SUMO** (Simulation of Urban Mobility) and **Python**. It focuses on generating dynamic traffic flows and analyzing congestion patterns during different times of the day. The project also includes data collection and classification of congestion levels, as well as prediction and visualization of peak congestion periods.
+This project simulates traffic flow and congestion levels using **SUMO** (Simulation of Urban Mobility) and **Python** . It focuses on generating dynamic traffic flows and analyzing congestion patterns during different times of the day. The project also includes data collection and classification of congestion levels, as well as prediction and visualization of peak congestion periods.
 
 ## Table of Contents
 - [Overview](#overview)
