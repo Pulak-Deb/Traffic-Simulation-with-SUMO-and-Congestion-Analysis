@@ -45,14 +45,14 @@ The simulation generates dynamic traffic flow and congestion data based on the r
 3.**Visualization**: After running the simulation and generating the CSV files, you can visualize the congestion levels by plotting the data using the script in the provided [notebook](from_SUMO.ipynb)
 
 ## Data Analysis
-**Simulation**: ![traffic-simulation-output](traffic-simulation-output.mp4)
-**classifying Congestion Levels**: Congestion levels are classified into three categories:
+     Simulation: ![traffic-simulation-output](traffic-simulation-output.mp4)
+     classifying Congestion Levels: Congestion levels are classified into three categories:
                                                                  -Low: Occupancy below 30%.
                                                                  -Moderate: Occupancy between 30% and 70%.
                                                                  -High: Occupancy above 70%.
 This classification helps in understanding the traffic flow and congestion during different periods of the day.
-**Congestion Over Time prediction with LSTM**: ![congestion_prediction](congestion_prediction.png)
-**Congestion by Time of Day**: ![Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
+    Congestion Over Time prediction with LSTM: ![congestion_prediction](congestion_prediction.png)
+    Congestion by Time of Day: ![Congestion Levels by Time of Day](Congestion_Levels_by_Time_of_Day.png)
 
 ## Dependencies
  -SUMO (Simulation of Urban MObility): Used for traffic simulation.
